@@ -12,11 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersApp"
         tools:targetApi="31">
+
         <activity
-            android:name=".SellerDashboardActivity"
+            android:name=".Seller.Dashboard.SellerDashboardActivity"
             android:exported="true"
             android:label="@string/title_activity_seller_dashboard"
-            android:theme="@style/Theme.FarmersApp" >
+            android:theme="@style/Theme.FarmersApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,13 +25,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SellerLoginActivity"
+            android:name=".Seller.Login.SellerLoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

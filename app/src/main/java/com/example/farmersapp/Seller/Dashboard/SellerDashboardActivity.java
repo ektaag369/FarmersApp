@@ -1,4 +1,4 @@
-package com.example.farmersapp;
+package com.example.farmersapp.Seller.Dashboard;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,12 @@ import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.farmersapp.R;
+import com.example.farmersapp.Seller.DashboardFragments.SellerHomeFragment;
+import com.example.farmersapp.Seller.DashboardFragments.SellerLogoutFragment;
+import com.example.farmersapp.Seller.DashboardFragments.SellerMoneyFragment;
+import com.example.farmersapp.Seller.DashboardFragments.SellerStatisticsFragment;
+import com.example.farmersapp.Utilities.FragmentHelper;
 import com.example.farmersapp.databinding.ActivitySellerDashboardBinding;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -21,7 +27,7 @@ public class SellerDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_seller_dashboard);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_seller_dashboard);
 
         fragmentHelper = new FragmentHelper(this);
 

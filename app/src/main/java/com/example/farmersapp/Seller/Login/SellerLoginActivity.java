@@ -1,4 +1,4 @@
-package com.example.farmersapp;
+package com.example.farmersapp.Seller.Login;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,11 +7,12 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.farmersapp.MainActivity;
+import com.example.farmersapp.R;
+import com.example.farmersapp.Seller.Dashboard.SellerDashboardActivity;
 import com.example.farmersapp.databinding.ActivitySellerLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -31,7 +32,7 @@ public class SellerLoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding= DataBindingUtil.setContentView(this,R.layout.activity_seller_login);
+        binding= DataBindingUtil.setContentView(this, R.layout.activity_seller_login);
 
         //for underline the "send code" text
         binding.txtSendcode.setPaintFlags(binding.txtSendcode.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
@@ -40,7 +41,7 @@ public class SellerLoginActivity extends AppCompatActivity {
         binding.icBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(SellerLoginActivity.this,MainActivity.class);
+                Intent i=new Intent(SellerLoginActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }

@@ -1,4 +1,4 @@
-package com.example.farmersapp;
+package com.example.farmersapp.Seller.DashboardFragments;
 
 import android.os.Bundle;
 
@@ -8,9 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SellerMoneyFragment extends Fragment {
-    public static SellerMoneyFragment newInstance() {
-        SellerMoneyFragment fragment = new SellerMoneyFragment();
+import com.example.farmersapp.R;
+
+public class SellerLogoutFragment extends Fragment {
+    public static SellerLogoutFragment newInstance() {
+        SellerLogoutFragment fragment = new SellerLogoutFragment();
         return fragment;
     }
 
@@ -18,6 +20,6 @@ public class SellerMoneyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_seller_money, container, false);
+        return inflater.inflate(R.layout.fragment_seller_logout, container, false);
     }
 }
